@@ -1,13 +1,13 @@
 #include <stdio.h>
-#include <stdint.h>
 
+void sense(struct temp sensor); // Sense function Prototype
 struct temp  // Temperature sensor details
 {
             int slave_add; //Tempeature sensor slave address
             int data:16; // data length 16 Bits
 };
 
-void sense(struct temp sensor); // Sense function Prototype
+
 struct temp sensor; // Structure Variable or Object
 
 int main()
